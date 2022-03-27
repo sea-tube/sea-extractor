@@ -1,0 +1,67 @@
+{
+  "name": "sea-extractor",
+  "version": "1.0.0",
+  "description": "Simple micro-service solution to extract data and metadata from videos such as thumbnails",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "tsc -w & nodemon dist/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/sea-tubesea-extractor.git"
+  },
+  "keywords": [
+    "seatube",
+    "ipfs",
+    "livepeer",
+    "thumb",
+    "thumbnail",
+    "metadata",
+    "extract",
+    "api",
+    "rest"
+  ],
+  "author": "anarkrypto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/sea-tubesea-extractor/issues"
+  },
+  "homepage": "https://gitlab.com/sea-tubesea-extractor#readme",
+  "devDependencies": {
+    "@types/ajv": "^1.0.0",
+    "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.11",
+    "@types/validator": "^13.7.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@types/mime": "^2.0.3",
+    "@types/uuid": "^8.3.4",
+    "ajv": "^8.8.2",
+    "ajv-formats": "^2.1.1",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "module-alias": "^2.2.2",
+    "nft.storage": "^6.1.0",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "_moduleAliases": {
+    "@root": "dist",
+    "@controllers": "dist/src/controllers",
+    "@models": "dist/src/models",
+    "@utils": "utils",
+    "@config": "dist/src/config"
+  },
+  "_moduleDirectories": [
+    "node_modules_custom"
+  ]
+}

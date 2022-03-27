@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+            "url":  { "type": "string", "maxLength": 128, "format": "uri" },
+            "frame":  { "type": "number", "minimum": 0, "maximum": 7200 }
+    },
+    "required": ["url"],
+    "additionalProperties": false
+}
