@@ -91,7 +91,7 @@ export default async function thumbnails(req: any, res: any) {
     res.status(200).json(
       {
         status: "CREATED",
-        image: "example.png"
+        image: cid
       })
   } catch (err) {
     res.status(ERROR_CODE.INTERNAL_SERVER_ERROR).json(
